@@ -1,2 +1,26 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+.justify {
+    text-align: justify;
+}
+
+.right{
+    text-align: right;
+}
+
+.description{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #c0c0c0;
+}
+
+button{
+    margin-top: 2%;
+}
+
+.thank-you{
+    color: blue;
+    margin-top: 2%;
+}

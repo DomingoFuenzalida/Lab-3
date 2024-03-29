@@ -1,0 +1,67 @@
+<div class="container text-center">
+    <form id="contactForm" action="#" onsubmit="return submitForm()">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col">
+                <div class="input-group mb-3 insert">
+                    <input id="nameInput" type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col">
+                <div class="input-group mb-3 insert">
+                    <input id="emailInput" type="text" class="form-control" placeholder="Mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col">
+                <div class="input-group">
+                    <span class="input-group-text">Message</span>
+                    <textarea id="messageInput" class="form-control insert" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col">
+                <div class="d-grid gap-2">
+                    <button id="submitButton" class="btn btn-success" type="submit">Submit</button>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </form>
+
+    <div id="thankYouMessage" class="row" style="display: none;">
+        <div class="col"></div>
+        <div class="col">
+            <h3 class="thank-you">Thank you for your message, we will contact you soon.</h3>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+<script>
+    function submitForm() {
+        // Limpiar los campos de entrada
+        document.getElementById('nameInput').value = '';
+        document.getElementById('emailInput').value = '';
+        document.getElementById('messageInput').value = '';
+
+        // Mostrar el mensaje de agradecimiento
+        document.getElementById('thankYouMessage').style.display = 'block';
+
+        // Evitar el envío del formulario
+        return false;
+    }
+</script>
