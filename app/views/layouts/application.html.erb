@@ -7,10 +7,38 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
   </head>
 
   <body>
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #7060ff;">
+  <div class="container-fluid">
+  <a href="/" class="btn btn-dark btn-lg">Y</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        <a href="/" class="btn btn-outline-light btn-lg">Home</a>
+        </li>
+        <li class="nav-item">
+        <a href="/about" class="btn btn-outline-light btn-lg">About</a>
+        </li>
+        <li class="nav-item">
+        <a href="/contact" class="btn btn-outline-light btn-lg">Contact</a>
+        </li>
+    </div>
+  </div>
+</nav>
+
+<footer class="bg-dark text-light py-3 fixed-bottom">
+  <div class="container text-center">
+    <p>© 2024 Y. All rights reserved.</p>
+  </div>
+</footer>
+
     <%= yield %>
   </body>
 </html>
